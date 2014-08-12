@@ -1,0 +1,12 @@
+$(function(){
+	//alert("Ok");
+	$(".item").hover(
+		function(){
+			//alert("OK");
+			$(this).find(".product-wrap").css({"display":"block"});
+		},
+		function(){
+			$(".product-wrap").css({"display":"none"});
+		}
+	);
+});

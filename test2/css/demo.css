@@ -1,0 +1,12 @@
+*{margin: 0;padding: 0}
+ul,li{list-style: none;list-style-position: outside;}
+#flash{width: 830px;height:320px;margin: 0 auto; margin-top: 100px; border: 1px solid #000;  position: relative;}
+.flashul{position: absolute;left:0; top: 300px;width: 100%; bottom: 10px; text-align: center;}
+.flashul li{margin: 0 ;display: inline-block;}
+.flasha{width: 8px; height: 8px;display: block;background: url("image/bg_control_nav.png") no-repeat; cursor: pointer;text-indent: -9999em;}
+.flashimg{ display: none;}
+.flashimgS{display: block;}
+.flashaS{background-position: 0 -16px;cursor: default;}
+
+#demo{width: 250px;height: 158px;margin: 50px auto;overflow: hidden;}
+#demo img{width: 250px;height: 158px;}
