@@ -9,4 +9,64 @@ $(function(){
 			$(".product-wrap").css({"display":"none"});
 		}
 	);
+	$(".lazy").hover(
+		function(){
+			//alert("Ok");
+			/*$(this).css({
+				"transform":"scale(2)"
+			});*/
+			
+			$(this).stop().animate({
+				"width":"200%",
+				"height":"200%",
+				"marginLeft":"-125px",
+				"marginTop":"-74px",
+			},5000);
+		},
+		function(){
+			$(this).stop().animate({
+				"width":"100%",
+				"height":"100%",
+				"marginLeft":"0px",
+				"marginTop":"0px",
+			},100);
+		}
+	);
+	$(".fd").hover(
+		function(){
+			$(this).parent().find(".fd").css({"display":"block"});
+			$(this).parent().find(".fd").stop().animate({opacity:'0.7'},800);
+		},
+		function(){
+			$(this).parent().find(".fd").css({"display":"","opacity":""});
+		}
+	);
+	$(".jqInfo").hover(
+		function(){
+			$(this).parent().find(".fd").css({"display":"block"});
+			$(this).parent().find(".fd").stop().animate({opacity:'0.7'},800);
+		},
+		function(){
+			$(this).parent().find(".fd").css({"display":"","opacity":""});
+		}
+	);
+	$(".jqAuthor").hover(
+		function(){
+			$(this).parent().find(".fd").css({"display":"block"});
+			$(this).parent().find(".fd").stop().animate({opacity:'0.7'},800);
+		},
+		function(){
+			$(this).parent().find(".fd").css({"display":"","opacity":""});
+		}
+	);
+	$(".next").hover(
+		function(){
+			
+			$(this).find("a").stop().animate({backgroundPosition:'110px'},200);
+		},
+		function(){
+			//alert("ok");
+			$(this).find("a").css({"background":""});
+		}
+	);
 });
