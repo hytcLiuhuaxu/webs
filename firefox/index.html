@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="fox-logo" class="fade-down-logo"></div>
-	<div id="stage">
+	<div id="sign-in" class="stage stageS">
 		<div class="sign-in oauth-sign-in">
 			<header>
 				<h1 id="fxa-signin-header">
@@ -20,10 +20,10 @@
 				<div class="success"></div>
 				<form novalidate>
 					<div class="input-row">
-						<input class="input email" type="email" placeholder="电子邮件" value autofocus >
+						<input class="input email" type="email" placeholder="电子邮件地址" value  >
 					</div>
 					<div class="input-row password-row">
-						<input class="input password tooltip-below" type="password" placeholder="密码" value autofocus>
+						<input class="input password tooltip-below" type="password" placeholder="密码" value >
 						<input id="show-password" type="checkbox" class="show-password" aria-controls="password" tabindex="-1" data-novalue>
 						<lable for="show-password" class="show-password-lable">显示</lable>
 					</div>
@@ -32,15 +32,55 @@
 					</div>
 				</form>
 				<div class="links">
-					<a href="" class="left rest-password">忘记密码？</a>
-					<a href="" class="right sign-up">创建帐号</a>
+					<a  class="left rest-password">忘记密码？</a>
+					<a  class="right sign-up">创建帐号</a>
 				</div>
 				<div class="privacy-links">
     				继续注册，表示我接受 Firefox 云服务的
     				<a href="" id="fxa-tos">服务条款</a>
     				<a href="" id="fxa-pp">隐私权政策</a>
-    				<a href="" id="mozcn-tos">火狐社区服务协议</a>
+    				及
+    				<a href="" id="mozcn-tos">火狐社区服务协议。</a>
 				</div>
+			</section>
+		</div>
+	</div>
+	<div id="sign-up" class="stage">
+		<div class="sign-in oauth-sign-in">
+			<header>
+				<h1 id="fxa-signin-header">
+					Create a Firefox Account for 火狐社区
+				</h1>
+			</header>
+			<section>
+				<div class="error"></div>
+				<div class="success"></div>
+				<form novalidate>
+					<div class="input-row">
+						<input class="input email" type="email" placeholder="电子邮件地址" value  >
+					</div>
+					<div class="input-row password-row">
+						<input class="input password tooltip-below" type="password" placeholder="密码" value >
+						<input id="show-password" type="checkbox" class="show-password" aria-controls="password" tabindex="-1" data-novalue>
+						<lable for="show-password" class="show-password-lable">显示</lable>
+						<div class="input-help input-help-focused">至少8个字符</div>
+					</div>
+					<div class="privacy-links2">
+	    				继续注册，表示我接受 Firefox 云服务的
+	    				<a href="" id="fxa-tos">服务条款</a>
+	    				<a href="" id="fxa-pp">隐私权政策</a>
+	    				及
+	    				<a href="" id="mozcn-tos">火狐社区服务协议。</a>
+					</div>
+					<div class="button-row">
+						<button id="submit-btn" type="submit" class="disabled">下一步</button>
+					</div>
+				</form>
+				<div class="links2">
+					<a  class=" rest-sign-in">已有账号？登录。</a>
+					
+				</div>
+				
 			</section>
 		</div>
 	</div>
