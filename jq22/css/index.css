@@ -104,6 +104,6 @@ dt{float: right;display: block;}
 .posts-nav li{margin: 0 13px 0 0;display: inline-block;}
 .posts-nav  .next a{background: url(image/ico-pagination-arrow-next.png) no-repeat center;background-color:  #999999; width: 144px;height: 53px;line-height: 53px;}
 .posts-nav  li a{text-indent: -9999em;text-align: left;border-radius: 5px;display: block;}
-.posts-nav .next a:hover {text-decoration: none;background: #ffe900 url(image/ico-pagination-arrow-next.png) no-repeat center;}*/
+.posts-nav .next a:hover {text-decoration: none;background: #ffe900 url(image/ico-pagination-arrow-next.png) no-repeat center;}
 .food{text-align: center;line-height: 24px;color: #999999;padding-top: 20px;padding-bottom: 20px;margin-top: 60px;border-top: 1px solid #cccccc;}
 .food li{display: block;}
