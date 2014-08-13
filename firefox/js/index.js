@@ -27,19 +27,30 @@ $(function(){
 	);
 	$(".password-row").click(
 		function(){
+			//alert("OK");
 			$(".show-password-lable").css({"border-left-color":"#0095dd"});
 			$(".password").css({"border-color":"#0095dd"});
 			$(".input-help").stop().animate({opacity:'1'},500);
+			return false;
 		}
 	);
-
-	$(".input").blur(
+	$("body").click(
+		function(){
+			//alert("OK");
+			$(".show-password-lable").css({"border-left-color":""});
+			$(".password").css({"border-color":""});
+			$(".input-help").stop().animate({opacity:'0'},100);
+		}
+	);
+	/*$("input").blur(
 		function(){
 			$(".show-password-lable").css({"border-left-color":""});
 			$(".password").css({"border-color":""});
 			$(".input-help").stop().animate({opacity:'0'},200);
 		}
-	);
+	);*/
+
+	
 	$(".sign-up").click(
 		function(){
 			$(".stage").removeClass("stageS");

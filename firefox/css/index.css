@@ -2,6 +2,7 @@
 ul,li{list-style: none;list-style-position: outside;}
 body{
 	height: 100%;
+	width: 100%;
 	color: #424f59;
 	font: message-box;
 	font-size: 14px;
