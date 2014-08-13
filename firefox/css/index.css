@@ -1,0 +1,62 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;list-style-position: outside;}
+body{
+	height: 100%;
+	color: #424f59;
+	font: message-box;
+	font-size: 14px;
+}
+#fox-logo{
+	background-image: url(image/880ec6c3.firefox.png);
+	background-size: 80px 85px; 
+	height: 85px;
+	margin-top: 10px;
+	margin: 0	auto;
+	top:40px;
+	width:80px; 
+	position: relative;
+	z-index: 999;
+}
+#stage{
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px #8a9ba8;
+	margin: -5px auto 0 auto;
+	min-height: 350px;
+	padding: 60px 40px 40px;
+	text-align: center;
+	width: 340px;
+
+	display: block;
+}
+header h1{font:message-box; line-height: 1em;font-size: 24px;font-weight: 200; margin: 0 0 32px;}
+.error .success{border-radius: 2px; color: #fff;display: none;margin-bottom: 5px; padding: 5px;position: relative;top:-15px;}
+.error{background: #d63920;}
+.success{background: #5fad47;}
+form{display: block;margin-top:0em;}
+.input-row{margin-bottom: 15px;position: relative;width: 100%;}
+.input{
+	background-color: #fff;
+	border: 1px solid #8a9ba8;
+	border-radius: 4px;
+	box-shadow:inset 0 1px 1px #f2f2f2;
+	color: #424f59;
+	font-size: 18px;
+	height: 45px;
+	outline: 0;
+	padding:0 20px;
+	position: relative;
+	width: 100%;
+	z-index: 2; 
+}
+.password{padding-right: 75px;}
+.password-row{position: relative;}
+.show-password{opacity: 1;position: absolute; margin: 3px 3px 3px 4px; }
+.show-password-lable{background-color: #fff;border-left: 1px solid #8a9ba8;border-radius: 0 4px 4px 0;color: #8a9ba8;cursor: pointer;font-size: 14px;height: 43px;line-height: 42px;min-width: 55px;padding: 0 7px;position: absolute;right: 1px;top: 1px;z-index: 3;}
+.button-row{margin-bottom: 20px; margin-top: 45px;}
+.button-row button.disabled{background: #8a9ba8;cursor: auto;}
+.button-row button{background: #0095dd;border: none;border-radius: 4px;color: #fff;font:message-box;font-size: 24px;padding: 15px 0;width: 100%}
+.links{margin-bottom: 20px;overflow: auto;padding:1px; }
+.links .left{float:left;}
+.links a{text-decoration: none;}
+a{color: #0095dd;cursor: pointer;}

@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div id="fox-logo" class="fade-down-logo"></div>
+	<div id="stage">
+		<div class="sign-in oauth-sign-in">
+			<header>
+				<h1 id="fxa-signin-header">
+					Sign in to 火狐社区
+				</h1>
+			</header>
+			<section>
+				<div class="error"></div>
+				<div class="success"></div>
+				<form novalidate>
+					<div class="input-row">
+						<input class="input email" type="email" placeholder="电子邮件" value autofocus >
+					</div>
+					<div class="input-row password-row">
+						<input class="input password tooltip-below" type="password" placeholder="密码" value autofocus>
+						<input id="show-password" type="checkbox" class="show-password" aria-controls="password" tabindex="-1" data-novalue>
+						<lable for="show-password" class="show-password-lable">显示</lable>
+					</div>
+					<div class="button-row">
+						<button id="submit-btn" type="submit" class="disabled">登录</button>
+					</div>
+				</form>
+				<div class="links">
+					<a href="" class="left rest-password">忘记密码？</a>
+					<a href="" class="right sign-up">创建帐号</a>
+				</div>
+				<div class="privacy-links">
+    				继续注册，表示我接受 Firefox 云服务的
+    				<a href="" id="fxa-tos">服务条款</a>
+    				<a href="" id="fxa-pp">隐私权政策</a>
+    				<a href="" id="mozcn-tos">火狐社区服务协议</a>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
