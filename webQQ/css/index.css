@@ -530,6 +530,7 @@ background-image: url(image/plugin_icon_qq_portal.png);
 	padding-top: 5px;
 	padding-left: 5px;
 	width: 62%;
+
 }
 .profile_name{
 	font-size: 1.4em;
@@ -538,4 +539,103 @@ background-image: url(image/plugin_icon_qq_portal.png);
 .profile_account {
 	color: #666;
 	font-size: .9em;
+	line-height: 14px;
+}
+.online_state_setting{
+	position: relative;
+	float: left;
+	height: 20px;
+	margin-top: 30px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.online_state_setting .main_icon{
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-image: url(image/state_sprite.gif);
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 2px;
+}
+
+.online_state_setting .down_arrow{
+	width: 10px;
+	height: 10px;
+	background-image: url(image/state_sprite.gif);
+	background-repeat: no-repeat;
+	background-position: -162px 4px;
+	float: left;
+	cursor: pointer;
+}
+.online_state_setting ul{
+	display: none;
+	position: absolute;
+	border:1px solid #000;
+	top: 20px;
+	left: -40px;
+	background: #fff;
+	width: 70px;
+}
+.online_state_setting li{
+	padding: 5px 3px;
+	cursor: pointer;
+	line-height: 12px;
+}
+.online_state_setting li i{
+	display: block;
+	width: 10px; 
+	height:10px;
+	background-image: url(image/state_sprite.gif);
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 2px;
+
+}
+.online_state_setting li:hover {
+background: #cff7ff;
+}
+.online_icon{background-position: 0 0;}
+.callme_icon{background-position: -72px 0;}
+.away_icon{background-position: -18px 0;}
+.busy_icon{background-position: -36px 0;}
+.hidden_icon{background-position: -54px 0;}
+.silent_icon{background-position: -108px 0;}
+.offline_icon{background-position: -90px 0;}
+
+.profile_signature{line-height: 22px;overflow: hidden;}
+.list_page .label{color: #666;float: left;width: 80px;}
+.clickAble{cursor: pointer;}
+.clickAble .row{line-height: 16px;} 
+.list_page .more_icon{
+	float: right;
+	width: 16px;
+	height: 16px;
+	background: url(image/open_arrow.png) no-repeat center;
+	background-size: 100% 100%;
+	margin-left: 10px;
+}
+.list_page .lable{
+	color: #666;
+	float: left;
+	width: 80px;
+}
+.loginout{
+	background: linear-gradient(#f74634,#ce2715)!important;
+	text-shadow: 0 0 10px #969696;
+	color: #fff;
+	text-align: center;
+}
+#about_qq_all{display:none;}
+
+/*right*/
+.container{position: relative;width: 700px;height: 100%;float: left;margin-left: 20px;overflow: hidden;}
+.profile-panel{z-index: 10009;top: 12%;left: 0;height: 80%;width: 100%;}
+.black header{color: #fff;background: linear-gradient(#555,#222);}
+
+.btn2{
+	margin-left:25px;
+	cursor: pointer!important;
+	transform:none;
+	padding: 6px 10px !important;
 }

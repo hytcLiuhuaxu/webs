@@ -48,6 +48,67 @@ $(function(){
 		}
 	);
 
+	$(".online_state_setting").click(
+
+		function(){
+			var dis =$(".online_state_setting ul").css("display");
+			//alert(dis);
+			if(dis=="none")
+			{
+				$(".online_state_setting ul").css({
+					"display":"block",
+				});
+			}
+			if(dis=="block")
+			{
+				$(".online_state_setting ul").css({
+					"display":"none",
+				});
+			}
+		}
+	);
+
+	$(".online_state_setting li").click(
+		function(){
+			//alert("Ok");
+			var x=$(this).find("i").attr("class")
+			$("#main_icon,#user_online_state").removeClass("online_icon");
+			$("#main_icon,#user_online_state").removeClass("away_icon");
+			$("#main_icon,#user_online_state").removeClass("away_icon");
+			$("#main_icon,#user_online_state").removeClass("busy_icon");
+			$("#main_icon,#user_online_state").removeClass("silent_icon");
+			$("#main_icon,#user_online_state").removeClass("hidden_icon");
+			$("#main_icon,#user_online_state").removeClass("offline_icon");
+			$("#main_icon,#user_online_state").addClass(""+x+"");
+		}
+	);
+
+	$(".clickShowAbout").click(
+		function(){
+			
+			var x=$("#about_qq_all").css("display");
+			//alert(x);
+			if(x=="none")
+			{
+				$(this).find(".more_icon").css({
+					"background-image":"url(css/image/open_arrow_fire.png)"
+				});
+				$("#about_qq_all").css({
+					"display":"block"
+				});
+			}
+			if(x=="block")
+			{
+				$(this).find(".more_icon").css({
+					"background-image":"url(image/open_arrow.png) no-repeat center"
+				});
+				$("#about_qq_all").css({
+					"display":"none"
+				});
+			}
+		}
+	);
+
 	$(".next").click(
 		function(){
 			//alert("OK");
