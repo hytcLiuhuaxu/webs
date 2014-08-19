@@ -274,7 +274,7 @@
 								<h1 id="panelTitle-4" class="text_ellipsis padding_20">设置</h1>
 							</header>
 							<div id="panelBodyWrapper-4" class="panel_body_container" style="top:45px;overflow:hidden">
-								<div id="panelBody-4" class="panel_body list_page setting" style="overflow:auto;bottom:50px;">
+								<div id="panelBody-4" class="panel_body list_page setting" style="overflow:auto;">
 									<div class="group">
 										<div class="row clearfix">
 											<div class="cloumn">
@@ -320,14 +320,14 @@
 											</div>
 										</div>
 									</div>
-									<div class="group">
+									<div class="group" >
 										<div class="row profile_signature">
 											<span class="label">个性签名:</span>
 											<span>手机信号不好 有事请QQ或微信联系</span>
 										</div>
 									</div>
 									<div class="group clickAble">
-										<div class="row">
+										<div id="xxxgsz" class="row">
 											消息相关设置
 											<span class="more_icon"></span>
 										</div>
@@ -402,20 +402,75 @@
 				</footer>
 			</div>
 		</div>
-		<div id="container" class="container" style="display:block">
-			<div class="panel profile-panel" id="panel-notifySetting" style="display:block">
+		<div id="container" class="container" >
+			<div class="panel profile-panel" id="panel-notifySetting" style="display:none">
 				<header id="panelHeader-notifySetting" class="panle_header">
-					<div id="panelHeader-notifySetting" class="panel_header">
-						<div id="panelLeftButton-notifySetting" class="btn2 btn2_small btn2_left btn2_black btn2_arrow_left">
-							<span id="panelLeftButtonText-notifySetting" class="btn2_text">
-								设置
-							</span>
+					<div id="panelLeftButton-notifySetting" class="btn2 btn2_small btn2_left btn2_black btn2_arrow_left">
+						<span id="panelLeftButtonText-notifySetting" class="btn2_text">
+							设置
+						</span>
+					</div>
+					<h1 id="panelTitle-notifySetting" class="text_ellipsis padding_20">
+						消息相关设置
+					</h1>
+				</header>
+				<div id="panelBodyWrapper-notifiSetting" class="panel_body_container" style="top:45px;overflow:hidden">
+					<div id="panelBody-notifySetting" class="panel_body2 list_page notify_setting">
+						<div class="group">
+							<div class="row clearfix">
+								<span class="label">声音</span>
+								<label class="switch switch-white">
+									<input id="enableVoiceBtn" type="checkbox" checked="">
+									<span>
+									</span>
+								</label>
+							</div>
+							<div class="row clearfix">
+								<span class="label">消息悬浮窗</span>
+								<label class="switch switch-white">
+									<input id="enableVoiceBtn" type="checkbox" checked="">
+									<span>
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="group">
+							<div class="row">
+						        <div class="clearfix">
+						            <span class="label">HTTPS</span>
+						            <label class="switch switch-white" cmd="clickHttpsSetting">
+						                <input id="enableHttpsBtn" type="checkbox" >
+						                <span>
+						            </span></label>
+						        </div>
+						        <div class="tips">使用 HTTPS 加密聊天内容</div>
+						    </div>
+						</div>
+						<div class="group">
+						    <div class="row">
+						        <div class="clearfix">
+						            <span class="long_label">按Ctrl+Enter键发送消息</span>
+						            <label class="switch switch-white" cmd="clickCtrlEnterSetting">
+						                <input id="enableCtrlEnterBtn" type="checkbox">
+						                <span>
+						            </span></label>
+						        </div>
+						    </div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="panel profile-panel" id="panel-5" style="display:block">
+				<header id="panelHeader-5" class="panel_header">
+					<div id="panelLeftButton-5" class="btn3">
+						<span id="panelLeftButtonText-5" class="btn3-Img"></span>
+					</div>
+					<h1 id="panelTitle-5" class="text_ellipsis padding_20">叶子</h1>
+					<button id="panelTitle-5" class="btn4">
+						<span id="panelRightButtonText-5" class="btn3_text">关闭</span>
+					</button>
 				</header>
-				<div id="panelBodyWrapper-notifiSetting" class="panel_body_container" style="top:45px;overflow:hidden"></div>
 			</div>
 		</div>
-	</div>
 </body>
 </html>

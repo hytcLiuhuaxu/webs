@@ -109,6 +109,24 @@ $(function(){
 		}
 	);
 
+	$("#xxxgsz").click(
+		function(){
+			$("#panel-notifySetting").css({
+					"display":"block"
+			}
+			);
+		}
+	);
+
+	$("#panelLeftButtonText-notifySetting").click(
+		function(){
+			$("#panel-notifySetting").css({
+					"display":"none"
+			});
+
+		}
+	);
+
 	$(".next").click(
 		function(){
 			//alert("OK");

@@ -9,6 +9,7 @@ body{
 	overflow: hidden;
 	font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+h1{display: block;}
 .bgAllImage{display: block;position: absolute;width: 100%;height: 100%;top: 0;left: 0;}
 .wrap{width: 1000px; height: 100%;margin: 0	auto;}
 #main_container{width: 280px;height: 100%;float: left; display: block;}
@@ -32,8 +33,8 @@ body{
 	bottom: 50px;
 }
 .panel_body{
-	width: 100%;
-	min-height: 100%;
+	width: 280px;
+	height: 401px;
 	position: relative;
 	background: #ededed;
 }
@@ -508,6 +509,7 @@ background-image: url(image/plugin_icon_qq_portal.png);
 }
 
 /*设置*/
+
 .list_page .group{padding: 10px;}
 .list_page .group>.row:last-child{
 	border-bottom-left-radius: 5px;
@@ -633,9 +635,144 @@ background: #cff7ff;
 .profile-panel{z-index: 10009;top: 12%;left: 0;height: 80%;width: 100%;}
 .black header{color: #fff;background: linear-gradient(#555,#222);}
 
-.btn2{
-	margin-left:25px;
-	cursor: pointer!important;
+
+
+#panelTitle-notifySetting{width: 550px;height: 18px;float: right;}
+#panelLeftButtonText-notifySetting{
+	display: block;
+	color: #fff;
+	line-height: 100%;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 100px;
+	
+	
+}
+.btn2_small{
+	margin-left: 25px;
+	margin-top: 5px;
+	margin-bottom: 7px;
+	display: block; 
+	float: left;
+	border-radius: 4px 4px 4px 4px;
+	padding: .57em 10px;
+	width: auto;
+	font-size: 14px;
+	vertical-align: middle;
+	border-color: #2c2727 #2c2727 #1a1919;
+	position: relative;
+	border: 1px solid;
+	cursor: pointer;
 	transform:none;
-	padding: 6px 10px !important;
+	width: 50px;
+	
+	position: relative;
+}
+.notify_setting .switch{float: right;}
+.switch{display: inline-block; width: 3.5em;height: 1.5em;position: relative;}
+.switch-white>input:checked{
+	background-image: linear-gradient(#5393c5,#6facd5);
+
+}
+.switch-white>input {
+	background-image: linear-gradient(#d0d0d0,#dfdfdf);
+}
+.switch>input{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 6em;
+	box-sizing: border-box;
+	cursor: pointer;
+	-webkit-appearance: none;
+
+}
+.panel_body2{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	background: #ededed;
+}
+.switch>input:checked~span {
+	left: .21em;
+}
+.switch-white>span {
+
+	background-image: linear-gradient(#fff,#f1f1f1);
+}
+.switch>span {
+	position: absolute;
+	top: 50%;
+	left: 1.9em;
+	margin-top: -.7em;
+	width: 1.4em;
+	height: 1.4em;
+	
+	border-radius: 1.6em;
+	pointer-events: none;
+	
+	transition: left .1s linear;
+}
+.tips{color: #666;}
+.list_page .long_label {
+	color: #666;
+	float: left;
+}
+
+/**/
+#panelHeader-5{padding-top:5px;height: 40px;	}
+
+.btn3{
+	cursor: pointer;
+	width: 51px;
+	height:15px; 
+	padding:.57em 10px;
+	font-size: 14px;
+	border-color: #2c2727 #2c2727 #1a1919;
+	background: -webkit-linear-gradient(top,#555,#222);
+	border: 1px solid;
+	border-radius: 5px;
+	margin:0 0 7px 15px;
+	display: block;
+	float: left;
+	vertical-align: middle;
+}
+.btn4{
+	width: 79px;
+	height: 33px;
+	margin: 0 10px 7px 2px;
+	padding: 6px 10px ;
+	font-size: 14px;
+	border-color: #2c2727 #2c2727 #1a1919;
+	background: -webkit-linear-gradient(top,#555,#222);
+	border: 1px solid;
+	border-radius: 5px;
+}
+.btn3-Img{
+	background: url(image/pannel-arrow-down.png);
+	width: 14px;
+	height: 14px;
+	display: block;
+	margin:0 4px;
+	background-size: 100% 100%!important;
+}
+#panelHeader-5 h1{
+	width: 471px;
+	height: 18px;
+	margin-top: -5px;
+	float: left;
+}
+.btn3_text {
+	max-width: 100px;
+}
+.btn3_text {
+	display: block;
+	color: #fff;
+	line-height: 100%;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
