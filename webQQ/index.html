@@ -41,29 +41,10 @@
 							<header id="panelHeader-1" class="panel_header">
 								<h1 id="panelTitle-1" class="text_ellipsis padding_20">会话</h1>
 							</header>
-							<div id="panelBodyWrapper-1" class="panel_body_container" style="">
-								<div id="panelBody-1" class="panel_body">
-									<div id="current_chat_scroll_area" class="scrollWrapper" >
+							<div id="panelBodyWrapper-1" class="panel_body_container" style="overflow:hidden;bottom:50px;">
+								<div id="panelBody-1" class="panel_body" >
+									<div id="current_chat_scroll_area" class="scrollWrapper" style="overflow:auto;">
 										<ul id="current_chat_list" class="list list_white">
-											<li id="recent-item-group-1" class="list_item notify" _uin="1" _type="group">
-												<a href="" class="avatar" _uin="1">
-													<img src="images/getface.jpg" class="lazyLoadImg loaded">
-													
-												</a>
-												<p class="member_nick" id="userNick-1">
-													杂牌军
-												</p>
-												<p id="recent-item-1-msg" class="member-msg text_ellipsis">早说就不浪费战斗力</p>
-											</li>
-											<li id="recent-item-friend-1" class="list_item"  _uin="2" _type="friend">
-												<a href="" class="avatar" _uin="2">
-													<img src="images/g2.jpg" class="lazyLoadImg loaded"></a>
-													<p class="member_nick" id="userNick-1">
-														叶子
-													</p>
-													<p id="recent-item-1-msg" class="member-msg text_ellipsis"></p>
-
-											</li>
 										</ul>
 									</div>
 								</div>
@@ -76,8 +57,8 @@
 									<a class="btn_img"></a>
 								</button>
 							</header>
-							<div id="panelBodyWrapper-2" class="panel_body_container" style="top:45px;">
-								<div id="panelbody-2" class="panel_body">
+							<div id="panelBodyWrapper-2" class="panel_body_container" style="top:45px;overflow:hidden;">
+								<div id="panelbody-2" class="panel_body" style="overflow:auto">
 									<div id="contactList" class="tab  tab_anumate member_tab">
 										<ul id="memberTab" class="tab_head">
 											<li class="haoyou active" ex="friend">好友</li>
@@ -93,8 +74,8 @@
 																<span>     ∩∩</span>
 																<span class="onlinePercent">1/1</span>
 															</div>
-															<ul id="groupBodyUl-0" class="list_group_body list list_white catogory_list" pd="0">
-																<li id="friend-tiem-friend-2" class="list_item">
+															<ul id="groupBodyUl-0" class="list_group_body list list_white catogory_list" pd="0" >
+																<li id="friend-tiem-friend-2" class="list_item" _uin="2" _type="friend" f="0"> 
 																	<a href="" class="avatar" >
 																		<img src="images/g2.jpg" class="lazyLoadImg loaded">
 																	</a>
@@ -114,7 +95,7 @@
 																<span class="onlinePercent">4/4</span>
 															</div>
 															<ul id="groupBodyUl-1" class="list_group_body list list_white catogory_list" pd="0">
-																<li id="friend-tiem-friend-3" class="list_item">
+																<li id="friend-tiem-friend-3" class="list_item" _uin="3" _type="friend" f="0">
 																	<a href="" class="avatar" >
 																		<img src="images/g3.jpg" class="lazyLoadImg loaded">
 																	</a>
@@ -127,7 +108,7 @@
 																		<span class="member_signatuer">非常愉快的周末</span>
 																	</p>
 																</li>
-																<li id="friend-tiem-friend-4" class="list_item">
+																<li id="friend-tiem-friend-4" class="list_item" _uin="4" _type="friend" f="0">
 																	<a href="" class="avatar" >
 																		<img src="images/g4.jpg" class="lazyLoadImg loaded">
 																	</a>
@@ -139,7 +120,7 @@
 																		
 																	</p>
 																</li>
-																<li id="friend-tiem-friend-5" class="list_item">
+																<li id="friend-tiem-friend-5" class="list_item" _uin="5" _type="friend" f="0">
 																	<a href="" class="avatar" >
 																		<img src="images/g5.jpg" class="lazyLoadImg loaded">
 																	</a>
@@ -153,7 +134,7 @@
 																		<span class="member_signature">男人的三大核心需求：1.被崇拜; 2.温柔; 3.被支持,认同,理解。女人的三大需求：1.安全感; 2.浪漫; 3.被宠和哄。...</span>
 																	</p>
 																</li>
-																<li id="friend-tiem-friend-6" class="list_item">
+																<li id="friend-tiem-friend-6" class="list_item" _uin="6" _type="friend" f="0">
 																	<a href="" class="avatar" >
 																		<img src="images/g6.jpg" class="lazyLoadImg loaded">
 																	</a>
@@ -175,7 +156,7 @@
 																<span class="onlinePercent">2/2</span>
 															</div>
 															<ul id="groupBodyUl-2" class="list_group_body list list_white catogory_list" pd="0">
-																<li id="friend-tiem-friend-7" class="list_item">
+																<li id="friend-tiem-friend-7" class="list_item" _uin="7" _type="friend" f="0">
 																	<a href="" class="avatar" >
 																		<img src="images/g7.jpg" class="lazyLoadImg loaded">
 																	</a>
@@ -188,7 +169,7 @@
 																		<span class="member_signatuer">人生就像走边边，看准目标，坚定走下去，就不会偏～</span>
 																	</p>
 																</li>
-																<li id="friend-tiem-friend-8" class="list_item">
+																<li id="friend-tiem-friend-8" class="list_item" _uin="8" _type="friend" f="0">
 																	<a href="" class="avatar" >
 																		<img src="images/g8.jpg" class="lazyLoadImg loaded">
 																	</a>
@@ -207,9 +188,9 @@
 												</div>
 											</li>
 											<li id="memberTabBody-group" class="">
-												<div id="g_list_scroll_area" class="member_scroll_area" style="overflow:hidden;">
+												<div id="g_list_scroll_area" class="member_scroll_area" style="overflow:auto">
 													<ul id="g_list" class="list list_white catogory_list">
-														<li id="group-item-group-1" class="list_item">
+														<li id="group-item-group-101" class="list_item" _type="group" _uin="101" f="0">
 															<a href="" class="avatar">
 																<img src="images/getface.jpg" class="lazyLoadImg loaded">
 																<span class="group_mask"></span>
@@ -219,7 +200,7 @@
 															</p>
 															<p class="member_msg text_ellipsis"></p>
 														</li>
-														<li id="group-item-group-2" class="list_item">
+														<li id="group-item-group-102" class="list_item" _type="group" _uin="102" f="0">
 															<a href="" class="avatar ">
 																<img src="images/getface.jpg" class="lazyLoadImg loaded">
 																
@@ -229,7 +210,7 @@
 															</p>
 															<p class="member_msg text_ellipsis"></p>
 														</li>
-														<li id="group-item-group-3" class="list_item">
+														<li id="group-item-group-103" class="list_item" _type="group" _uin="103" f="0">
 															<a href="" class="avatar">
 																<img src="images/getface.jpg" class="lazyLoadImg loaded">
 																
@@ -273,7 +254,7 @@
 							<header id="panelHeader-4" class="panel_header">
 								<h1 id="panelTitle-4" class="text_ellipsis padding_20">设置</h1>
 							</header>
-							<div id="panelBodyWrapper-4" class="panel_body_container" style="top:45px;overflow:hidden">
+							<div id="panelBodyWrapper-4" class="panel_body_container" style="top:45px;overflow:hidden; ">
 								<div id="panelBody-4" class="panel_body list_page setting" style="overflow:auto;">
 									<div class="group">
 										<div class="row clearfix">
@@ -414,7 +395,7 @@
 						消息相关设置
 					</h1>
 				</header>
-				<div id="panelBodyWrapper-notifiSetting" class="panel_body_container" style="top:45px;overflow:hidden">
+				<div id="panelBodyWrapper-notifiSetting" class="panel_body_container" style="top:45px;overflow:hidden;">
 					<div id="panelBody-notifySetting" class="panel_body2 list_page notify_setting">
 						<div class="group">
 							<div class="row clearfix">
@@ -460,193 +441,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="panel profile-panel" id="panel-5" style="display:block">
-				<header id="panelHeader-5" class="panel_header">
-					<div id="panelLeftButton-5" class="btn3">
-						<span id="panelLeftButtonText-5" class="btn3-Img"></span>
-					</div>
-					<h1 id="panelTitle-5" class="text_ellipsis padding_20">叶子</h1>
-					<button id="panelTitle-5" class="btn4">
-						<span id="panelRightButtonText-5" class="btn3_text">关闭</span>
-					</button>
-				</header>
-				<div id="panelBodyWrapper-5" class="panel_body_container" style="top:45px;bottom:50px; overflow:hidden">
-					<div id="panelBody-5" class="panel_body2 chat_container"></div>
-					<ul id="panelMenuList-5" class="pannel_menu_list" style="display:block">
-						<li class="viewQzone">
-							<div class="menu_list_icon"></div>
-						</li>
-						<li class="viewInfo">
-							<div class="menu_list_icon"></div>
-						</li>
-						<li class="viewRecord">
-							<div class="menu_list_icon"></div>
-						</li>
-					</ul>
-				</div>
-				<footer id="panelFooter-5" class="chat_toolBar_footer">
-					<div class="chat_toolbar">
-						<div id="add_face_btn" class="btn5 btn_face">
-							<span class="btn_img"></span>
-						</div>
-						<textarea id="chat_textarea" class="input input_white chat_textarea"></textarea>
-						<button id="send_chat_btn" class="btn5 btn5_small btn5_blue">
-							<span class="btn5_text">发送</span>
-						</button>
-					</div>
-					<div id="face_images" class="qq_face_area" style="display:none;">
-						<ul class="wrap" style="width:4200px;">
-							<li class="faceItem faceItem1" style="width:700px;">
-								<i title="微笑" href=""></i>
-								<i title="撇嘴" href=""></i>
-								<i title="色" href=""></i>
-								<i title="发呆" href=""></i>
-								<i title="得意" href=""></i>
-								<i title="流泪" href=""></i>
-								<i title="害羞" href=""></i>
-								<i title="闭嘴" href=""></i>
-								<i title="睡" href=""></i>
-								<i title="大哭" href=""></i>
-								<i title="尴尬" href=""></i>
-								<i title="发怒" href=""></i>
-								<i title="调皮" href=""></i>
-								<i title="大笑" href=""></i>
-								<i title="惊讶" href=""></i>
-								<i title="悲伤" href=""></i>
-								<i title="酷" href=""></i>
-								<i title="冷汗" href=""></i>
-								<i title="抓狂" href=""></i>
-								<i title="吐" href=""></i>
-								<i title="delkey" href=""></i>
-							</li>
-							<li class="faceItem faceItem2"  style="width: 700px;">
-						        <i title="偷笑" href=""></i>   
-						        <i title="可爱" href=""></i>  
-						        <i title="白眼" href=""></i>  
-						        <i title="傲慢" href=""></i> 
-						        <i title="饥饿" href=""></i>  
-						        <i title="困" href=""></i>  
-						        <i title="惊恐" href=""></i>  
-						        <i title="流汗" href=""></i>
-						        <i title="憨笑" href=""></i>    
-						        <i title="大兵" href=""></i>  
-						        <i title="奋斗" href=""></i>
-						        <i title="咒骂" href=""></i>  
-						        <i title="疑问" href=""></i>
-						        <i title="嘘" href=""></i>
-						        <i title="晕" href=""></i>
-						        <i title="折磨" href=""></i>
-						        <i title="衰" href=""></i>
-						        <i title="骷髅" href=""></i>
-						        <i title="敲打" href=""></i>
-						        <i title="再见" href=""></i>
-					            <i title="delKey" href=""></i>
-					        </li>
-					        <li class="faceItem faceItem3"  style="width: 700px;">
-						        <i title="擦汗" href=""></i>   
-						        <i title="抠鼻" href=""></i>  
-						        <i title="鼓掌" href=""></i>  
-						        <i title="糗大了" href=""></i> 
-						        <i title="坏笑" href=""></i>  
-						        <i title="左哼哼" href=""></i>  
-						        <i title="右哼哼" href=""></i>  
-						        <i title="哈欠" href=""></i>
-						        <i title="鄙视" href=""></i>    
-						        <i title="委屈" href=""></i>  
-						        <i title="快哭了" href=""></i>
-						        <i title="阴险" href=""></i>  
-						        <i title="亲亲" href=""></i>
-						        <i title="吓" href=""></i>
-						        <i title="可怜" href=""></i>
-						        <i title="菜刀" href=""></i>
-						        <i title="西瓜" href=""></i>
-						        <i title="啤酒" href=""></i>
-						        <i title="篮球" href=""></i>
-						        <i title="乒乓" href=""></i>
-					            <i title="delKey" href=""></i>
-					        </li>
-					        <li class="faceItem faceItem4" style="width: 700px;">
-						        <i title="咖啡" href=""></i>   
-						        <i title="饭" href=""></i>   
-						        <i title="猪头" href=""></i>  
-						        <i title="玫瑰" href=""></i>  
-						        <i title="凋谢" href=""></i>  
-						        <i title="示爱" href=""></i>  
-						        <i title="爱心" href=""></i>   
-						        <i title="心碎" href=""></i>   
-						        <i title="蛋糕" href=""></i>  
-						        <i title="闪电" href=""></i>  
-						        <i title="炸弹" href=""></i>   
-						        <i title="刀" href=""></i>  
-						        <i title="足球" href=""></i>  
-						        <i title="瓢虫" href=""></i>   
-						        <i title="便便" href=""></i>   
-						        <i title="月亮" href=""></i>  
-						        <i title="太阳" href=""></i>  
-						        <i title="礼物" href=""></i>
-						        <i title="拥抱" href=""></i> 
-						        <i title="强" href=""></i>
-					            <i title="delKey" href=""></i>
-					       	</li>
-					        <li class="faceItem faceItem5" cmd="chooseFace" style="width: 700px;">
-						        <i title="弱" href=""></i> 
-						        <i title="握手" href=""></i> 
-						        <i title="胜利" href=""></i>  
-						        <i title="抱拳" href=""></i> 
-						        <i title="勾引" href=""></i>
-						        <i title="拳头" href=""></i>  
-						        <i title="差劲" href=""></i>
-						        <i title="爱你" href=""></i>
-						        <i title="NO" href=""></i> 
-						        <i title="OK" href=""></i> 
-						        <i title="爱情" href=""></i>
-						        <i title="飞吻" href=""></i>
-						        <i title="跳跳" href=""></i>
-						        <i title="发抖" href=""></i>
-						        <i title="怄火" href=""></i>
-						        <i title="转圈" href=""></i> 
-						        <i title="磕头" href=""></i>
-						        <i title="回头" href=""></i>
-						        <i title="跳绳" href=""></i>
-						        <i title="挥手" href=""></i>
-				            <i title="delKey" href="javascript:;"></i>
-				        	</li>
-						    <li <li class="faceItem faceItem6" cmd="chooseFace" style="width: 700px;">
-						        <i title="激动" href=""></i>    
-						        <i title="街舞" href=""></i>  
-						        <i title="献吻" href=""></i>   
-						        <i title="左太极" href=""></i>   
-						        <i title="右太极" href=""></i>   
-						        <i title="双喜" href=""></i>  
-						        <i title="鞭炮" href=""></i>  
-						        <i title="灯笼" href=""></i> 
-						        <i title="发财" href=""></i>  
-						        <i title="K歌" href=""></i>
-						        <i title="购物" href=""></i>
-						        <i title="邮件" href=""></i>
-						        <i title="帅" href=""></i> 
-						        <i title="喝彩" href=""></i>  
-						        <i title="祈祷" href=""></i> 
-						        <i title="爆筋" href=""></i> 
-						        <i title="棒棒糖" href=""></i>   
-						        <i title="喝奶" href=""></i>
-						        <i title="下面" href=""></i>
-						        <i title="香蕉" href=""></i>
-					            <i title="delKey" href=""></i>
-					        </li>   
-						</ul>
-						<ul class="btnsWrap">
-							<li class="selected" _index="0">
-							</li>
-							<li class _index="1"></li>
-							<li class _index="2"></li>
-							<li class _index="3"></li>
-							<li class _index="4"></li>
-							<li class _index="5"></li>
-						</ul>
-					</div>
-				</footer>
-			</div>
+			
 		</div>
 </body>
 </html>
