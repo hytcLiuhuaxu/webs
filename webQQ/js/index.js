@@ -127,6 +127,32 @@ $(function(){
 		}
 	);
 
+	$(".btnsWrap li").click(
+		function(){
+			$(".btnsWrap li").removeClass("selected");
+			$(this).addClass("selected");
+			var x=$(this).attr("_index");
+			$(".faceItem").css({
+				"transform":"translate3d("+x*-700+"px,0px,0px)",
+			});
+		}
+	);
+
+	$("#add_face_btn").click(
+		function(){
+			var x=$("#face_images").css("display");
+			//alert(x);
+			if(x=="none")
+			{
+				$("#face_images").css({"display":"block"});
+			}
+			if(x=="block")
+			{
+				$("#face_images").css({"display":"none"});
+			}
+		}
+	);
+
 	$(".next").click(
 		function(){
 			//alert("OK");
