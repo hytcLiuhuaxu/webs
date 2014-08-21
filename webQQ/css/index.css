@@ -718,8 +718,8 @@ background: #cff7ff;
 }
 
 /**/
-#panelHeader-5{padding-top:5px;height: 40px;	}
-
+.panelHeader-5{height: 40px;	}
+.panelTitle-5{width: 471px;float: left;}
 .btn3{
 	cursor: pointer;
 	width: 51px;
@@ -730,15 +730,16 @@ background: #cff7ff;
 	background: -webkit-linear-gradient(top,#555,#222);
 	border: 1px solid;
 	border-radius: 5px;
-	margin:0 0 7px 15px;
+	margin:5px 0 7px 15px;
 	display: block;
 	float: left;
 	vertical-align: middle;
 }
+
 .btn4{
 	width: 79px;
 	height: 33px;
-	margin: 0 10px 7px 2px;
+	margin: 5px 10px 7px 2px;
 	padding: 6px 10px ;
 	font-size: 14px;
 	border-color: #2c2727 #2c2727 #1a1919;
@@ -777,7 +778,7 @@ background: #cff7ff;
 .chat_container{
 	background: #a8b6b9;
 	width: 100%;
-	min-height: 100%;
+	height: 100%;
 	background: rgba(0,0,0,.5)!important;
 
 }
@@ -804,7 +805,7 @@ background: #cff7ff;
 	color: #fff;
 }
 
-#add_face_btn{border:0;background: 0;width: 38px;}
+.add_face_btn{border:0;background: 0;width: 38px;}
 
 .panel .chat_toolbar{
 	padding: 4px 10px 4px 6px;
@@ -848,6 +849,7 @@ cursor: pointer!important;
 	margin: 5px 10px 5px 6px;
 	max-height: 80px;
 	overflow: hidden;
+	width: 572px;height: 34px;
 }
 .input_white{
 	color: #333;
@@ -857,14 +859,12 @@ cursor: pointer!important;
 	font-size: 16px;
 	font-family: 微软雅黑, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-#chat_textarea{
-	width: 572px;height: 34px;
-}
+
 input[type=text], textarea, fieldset {
 	border: 0;
 	outline: 0;
 }
-#send_chat_btn {
+.send_chat_btn {
 	width: 52px;
 	height: 38px;
 	border-color:#044062;
@@ -1005,4 +1005,37 @@ input[type=text], textarea, fieldset {
 }
 .viewRecord .menu_list_icon {
 	background-position: -90px 2px;
+}
+
+.chat_time{
+	text-align: center;
+}
+.chat_time span{
+	color: rgba(255,255,255,.8);
+	background: rgba(0,0,0,.3);
+	padding: 2px 8px;
+	display: inline-block;
+	margin: 10px;
+	font-size: 13px;
+	border-radius: 13px;
+}
+.self{text-align: center;width: 680px;height: 66px;}
+.chat_content_group{padding: 10px;}
+.chat_content_avatar{float: right;margin: 0 0 0 10px;width: 40px;height: 40px;}
+.self .chat_nick{text-align:right;}
+.chat_nick{font-size: 14px;margin: 0 0 10px; text-shadow:1px 1px 1px #fff;}
+.self .chat_content{
+	float: right;
+	background: linear-gradient(#fff,#e1e1e1);
+}
+.chat_content{
+	display: inline-block;
+	min-height: 16px;
+	max-width: 50%;
+	border-radius: 5px;
+	padding: 10px 15px;
+	word-break: break-all;
+	box-shadow: 1px 1px 5px #000;
+	line-height: 1.4;
+
 }

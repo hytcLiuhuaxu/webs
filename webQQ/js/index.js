@@ -135,51 +135,37 @@ $(function(){
 			});
 	});
 	
-	$(document).on("click","#add_face_btn",function(){
+	$(document).on("click",".add_face_btn",function(){
 
-		var x=$("#face_images").css("display");
+		var x=$(this).parent().parent().parent().find(".face_images").css("display");
 		//alert(x);
 		if(x=="none")
 		{
-			$("#face_images").css({"display":"block"});
+			$(this).parent().parent().parent().find(".face_images").css({"display":"block"});
 		}
 		if(x=="block")
 		{
-			$("#face_images").css({"display":"none"});
+			$(this).parent().parent().parent().find(".face_images").css({"display":"none"});
 		}
 		
 	});
-	$("#add_face_btn").click(
-		function(){
-			var x=$("#face_images").css("display");
-			//alert(x);
-			if(x=="none")
-			{
-				$("#face_images").css({"display":"block"});
-			}
-			if(x=="block")
-			{
-				$("#face_images").css({"display":"none"});
-			}
-		}
-	);
-	$(document).on("click","#panelLeftButton-5",function(){
-			var x=$("#panelMenuList-5").css("top");
+	$(document).on("click",".panelLeftButton-5",function(){
+			var x=$(this).parent().parent().find(".panelMenuList-5").css("top");
 			//alert(x);
 			if(x=="-90px")
 			{
 	
-				$("#panelMenuList-5").animate({"top":"0"},200);
+				$(this).parent().parent().find(".panelMenuList-5").animate({"top":"0"},200);
 				
 			}
 			if(x=="0px")
 			{
-				$("#panelMenuList-5").animate({"top":"-90px"},200);
+				$(this).parent().parent().find(".panelMenuList-5").animate({"top":"-90px"},200);
 				
 			}
 	});
 	
-	$(document).on("click","#panelRightButton-5",function(){
+	$(document).on("click",".panelRightButton-5",function(){
 		_uin=$(this).parent().parent().attr("_uin");
 		_type=$(this).parent().parent().attr("_type");
 		
@@ -190,21 +176,7 @@ $(function(){
 		}
 
 	});
-	/*$("#panelRightButton-5").click(
-		function(){
 
-			var x=$("#panel-5").css("display");
-			//alert(x);
-			if(x=="none")
-			{
-				$("#panel-5").css("display","block");
-			}
-			if(x=="block")
-			{
-				$("#panel-5").css("display","none");
-			}
-		}
-	);*/
 	
 	$(".next").click(
 		function(){
@@ -221,7 +193,14 @@ $(function(){
 		}
 	);
 
-	
+	$(document).on("click",".send_chat_btn",function(){
+		
+		_uin=$(this).parent().parent().parent().attr("_uin");
+		_type=$(this).parent().parent().parent().attr("_type");
+		var val=$(this).parent().find(".chat_textarea").val();
+		
+		addTalkInfo(_uin,_type,val);
+	});
 	$(document).on("click","#current_chat_list li",function(){
 		
 		_uin=$(this).attr("_uin");
@@ -265,11 +244,17 @@ $(function(){
 			if(f=="0")
 			{
 				addlist(_uin,_type,_nick,_img);
+				addtalk(_uin,_type,_nick);
 				$(this).attr("f","1");
 			}
-			addtalk(_uin,_type,_nick);
+			if(f=="1")
+			{
+				$("#panel-"+_type+""+_uin+"").css("display","block");
+			}
+			
 		}
 	);
+	
 });
 
 
@@ -316,21 +301,43 @@ function imgpre(){
 	$("#bgAllImage").append(html);
 }
 
+function addTalkInfo(x,y,val)
+{
+	var ct=new Date();
+	var h=ct.getHours();
+	var m=ct.getMinutes();
+	var s=ct.getSeconds();
+	//alert(val);
+	var html='';
+	html+='<div class="chat_time">';
+	html+='<span>'+h+':'+m+':'+s+'</span>';
+	html+='</div>';
+	html+='<div class="chat_content_group self  " _sender_uin="'+x+'">';
+    html+='<img class="chat_content_avatar" src="images/g.jpg" >';
+    html+='<p class="chat_nick">LHX</p>';  
+    html+='<p class="chat_content ">'+val+'</p>';
+	html+='</div>';
+	if(val!='')
+	{
+		$("#panel-"+y+""+x+"").find(".panelBody-5").append(html);
+		$("#panel-"+y+""+x+"").find(".chat_textarea").val("");
+	}
+}
 function addtalk(x,y,z){
 	var html='';
-	html+='<div class="panel profile-panel panel-5" id="panel-'+y+''+x+'" _uin="'+x+'" _type="'+y+'" _nick="'+z+'" style="display:block">'
-	html+='<header id="panelHeader-5" class="panel_header">'
-	html+='<div id="panelLeftButton-5" class="btn3">'
-	html+='<span id="panelLeftButtonText-5" class="btn3-Img"></span>'
+	html+='<div class="panel profile-panel panel-5" id="panel-'+y+''+x+'" _uin="'+x+'" _type="'+y+'" _nick="'+z+'"  style="display:block">'
+	html+='<header  class="panelHeader-5 panel_header">'
+	html+='<div  class="panelLeftButton-5 btn3">'
+	html+='<span  class="panelLeftButtonText-5 btn3-Img"></span>'
 	html+='</div>'
-	html+='<h1 id="panelTitle-5" class="text_ellipsis padding_20">'+z+'</h1>'
-	html+='<button id="panelRightButton-5" class="btn4">'
-	html+='<span id="panelRightButtonText-5" class="btn3_text">关闭</span>'
+	html+='<h1  class="panelTitle-5 text_ellipsis padding_20">'+z+'</h1>'
+	html+='<button  class="panelRightButton-5 btn4">'
+	html+='<span  class="panelRightButtonText-5 btn3_text">关闭</span>'
 	html+='</button>'
 	html+='</header>'
-	html+='<div id="panelBodyWrapper-5" class="panel_body_container" style="top:45px;bottom:50px; overflow:hidden">'
-	html+='<div id="panelBody-5" class="panel_body2 chat_container"></div>'
-	html+='<ul id="panelMenuList-5" class="pannel_menu_list" style="display:block">'
+	html+='<div  class="panelBodyWrapper-5 panel_body_container" style="top:45px;bottom:50px; overflow:hidden">'
+	html+='<div  class="panelBody-5 panel_body2 chat_container" style="overflow:auto;"></div>'
+	html+='<ul  class="panelMenuList-5 pannel_menu_list" style="display:block">'
 	html+='<li class="viewQzone">'
 	html+='<div class="menu_list_icon"></div>'
 	html+='QQ空间'
@@ -345,17 +352,17 @@ function addtalk(x,y,z){
     html+='</li>'
 	html+='</ul>'
 	html+='</div>'
-	html+='<footer id="panelFooter-5" class="chat_toolBar_footer">'
+	html+='<footer  class="panelFooter-5 chat_toolBar_footer">'
 	html+='<div class="chat_toolbar">'
-	html+='<div id="add_face_btn" class="btn5 btn_face">'
+	html+='<div  class="add_face_btn btn5 btn_face">'
 	html+='<span class="btn_img"></span>'
 	html+='</div>'
-	html+='<textarea id="chat_textarea" class="input input_white chat_textarea"></textarea>'
-	html+='<button id="send_chat_btn" class="btn5 btn5_small btn5_blue">'
+	html+='<textarea  class="input input_white chat_textarea"></textarea>'
+	html+='<button  class="send_chat_btn btn5 btn5_small btn5_blue">'
 	html+='<span class="btn5_text">发送</span>'
 	html+='</button>'
 	html+='</div>'
-	html+='<div id="face_images" class="qq_face_area" style="display:none;">'
+	html+='<div  class="face_images qq_face_area" style="display:none;">'
 	html+='<ul class="wrap" style="width:4200px;">'
 	html+='<li class="faceItem faceItem1" style="width:700px;">'
 	html+='<i title="微笑" href=""></i>'
