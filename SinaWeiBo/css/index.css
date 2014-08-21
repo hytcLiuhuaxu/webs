@@ -208,3 +208,77 @@ margin: 3px 0 0;
 	border-radius: 3px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 }
+.list li .new {
+	
+	display: block;
+	position: absolute;
+	top: 43px;
+	left: 38px;
+	width: 27px;
+	height: 18px;
+	background: url("image/bg_line.png") no-repeat -869px -5px;
+}
+
+.gn_topmenulist_app .enter {
+	float: right;
+	width: 180px;
+	padding: 0 0 15px;
+}
+
+.gn_topmenulist_app .my_app,.gn_topmenulist_app .all_app{
+	display: inline-block;
+	width: 83px;
+	height: 48px;
+	margin: 0 0 10px;
+	border: 1px solid #cecece;
+	border-radius: 2px;
+	background: #f2f2f2;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #333;
+}
+
+.gn_topmenulist_app .my_app em,.gn_topmenulist_app .all_app em{
+	display: inline-block;
+	width: 81px;
+	height: 46px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.my_app span,.all_app span{
+	display: block;
+	width: 27px;
+	height: 21px;
+	margin: 0 auto;
+	padding: 4px 0;
+	background: url("image/bg_line.png") no-repeat -904px -3px;
+}
+.gn_topmenulist_app .my_app:hover, .gn_topmenulist_app .all_app:hover {
+	border-color: #ffa00a;
+	background: #ffa00a;
+	color: #fff;
+	text-decoration: none;
+}
+.gn_topmenulist_app .all_app {
+	margin: 0 0 10px 10px;
+}
+.gn_topmenulist_app_hot_v2 .all_app span {
+	background-position: -1445px -3px;
+}
+.gn_topmenulist_app_hot_v2 .my_app span {
+	background-position: -1565px -3px;
+}
+.gn_topmenulist_app_hot_v2 .my_app:hover span {
+	background-position: -1595px -3px;
+}
+.gn_topmenulist_app_hot_v2 .all_app:hover span {
+	background-position: -1505px -3px;
+}
+.gn_topmenulist_app .my_app:hover em, .gn_topmenulist_app .all_app:hover em {
+	border-color: #feb747;
+}

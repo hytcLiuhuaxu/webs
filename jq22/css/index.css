@@ -4,6 +4,18 @@ a{color: #60b7e1;text-decoration: none;}
 body{color: #666; background-image: url("image/jqbg.jpg");font-size: 12px; color:#666;font-family: "微软雅黑";}
 img{border: 0;}
 div{display: block;}
+#title{
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 100px;
+	right: 50px;
+	
+}
+#title img{opacity: 0.3}
+#title img:hover{opacity: 1;}
+
+
 .nav{position: fixed; top: 0;left: 0;width: 86px; height: 100%;margin: 0 auto;background-image: url(image/jqbg.jpg);border-collapse: separate;border-right: 1px solid #cccccc;z-index:5;}
 .all-nav{position: absolute;left: 0; width: 86px; height: 100%;overflow: visible;border-style: none;position: absolute;}
 .home{height: 74px; border-bottom: 1px solid #ccc;}

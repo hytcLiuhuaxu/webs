@@ -8,6 +8,17 @@ body{
 	font-size: 14px;
 	background-color: #f2f2f2;
 }
+#title{
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 100px;
+	right: 50px;
+	
+}
+#title img{opacity: 0.3}
+#title img:hover{opacity: 1;}
+
 #fox-logo{
 	background-image: url(image/880ec6c3.firefox.png);
 	background-size: 80px 85px; 
