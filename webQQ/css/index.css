@@ -159,7 +159,7 @@ h1{display: block;font-size: 2em;font-weight: bold;}
 	width: 100%;
 	bottom: 0px;
 	top:0;
-
+	height: 445px;
 }
 #panelBodyWrapper-1{top: 45px;}
 .panel_body{
@@ -386,7 +386,7 @@ nav a .icon{display: inline-block; width: 34px;height: 34px; background-size: 10
 	border-left: 0;
 } 
 .tab_body{width: 100%;background: gray;}
-.member_tab_body{position: absolute;bottom: 50px;top: 39px; }
+.member_tab_body{position: absolute;bottom: 0px;top: 39px; }
 .member_tab_body>li{display: none;height: 100%;backface-visibility:hidden;}
 .member_tab_body>li.active{display: block;}
 
@@ -696,7 +696,7 @@ background: #cff7ff;
 	box-sizing: border-box;
 	cursor: pointer;
 	-webkit-appearance: none;
-
+	outline: none;
 }
 .panel_body2{
 	width: 100%;

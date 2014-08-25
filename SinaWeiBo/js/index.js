@@ -1,5 +1,5 @@
 $(function(){
-	//alert("Ok");
+
 	$(".gn_title").hover(
 		function(){
 			//alert("OK");
@@ -29,4 +29,7 @@ $(function(){
 		}
 		
 	);
+
 });
+
+
